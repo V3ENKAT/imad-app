@@ -19,7 +19,7 @@ var articleOne = {
                 This is the content of my first article.  of my first article.  of my first article.  of my first article.  of my first article.  of my first article.  of my first article.  of my first article.  
                 </p>`
                 
-    }; 
+    }
 function createTemplate(data){
  var title = data.title;
  var date = data.date;
