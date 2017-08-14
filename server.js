@@ -6,12 +6,17 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-app.get('/article-one', function (req, res){res.send(
-    'Article one requestedand will be served here')});
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));});
+  
+  
+app.get('/article-one', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index-one.html'));});
+    
+
 app.get('/article-two', function (req, res){res.send(
     'Article Two requestedand will be served here')});
+
+
 app.get('/article-three', function (req, res){res.send(
     'Article Three requestedand will be served here')});
             
