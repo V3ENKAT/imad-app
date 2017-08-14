@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var a = {
     title: 'Article One I VENKAT',
     heading: 'Article One',
     date:  'Aug 14 2017',
@@ -19,7 +19,7 @@ var articleOne = {
                 This is the content of my first article.  of my first article.  of my first article.  of my first article.  of my first article.  of my first article.  of my first article.  of my first article.  
                 </p>`
                 
-    }
+    };
 function createTemplate(data){
  var title = data.title;
  var date = data.date;
@@ -64,7 +64,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));});
   
 app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleOne));});
+  res.send(createTemplate(a));});
     
 
 app.get('/article-two', function (req, res){
