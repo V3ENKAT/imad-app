@@ -45,10 +45,14 @@ var name= nameInput.value;
 var submit=document.getElementById('submit_btn');
 submit.onclick=function(){
 //Make a req.to the server and send the name.
-//capture a list of naemes and render it as a list.
-var names = {'name1', 'name2', 'name3'};
+
+//capture a list of names and render it as a list.
+var names = ['name1', 'name2', 'name3','name4'];
 var list =' ';
-for (vari=0;i=< name.length; i++){list = <li>'+names(i)'+</li>;      
+for (var i=0; i <name.length; i++){
+    list += '<li>'+names[i]+'</li>'; 
+    var ul=document.getElementById('namelist');
+    ul.innerHTML=list;
 }
 var ul=document.getElementById('namelist');
 ul.innerHTML=list;
