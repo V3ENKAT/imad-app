@@ -15,7 +15,7 @@ element.innerHTML = '---';
 // COUNTER CODE
 
 var button = document.getElementById("counter");
-var counter = counter+1;
+var counter = 0;
 
 button.onclick=function (){
     
