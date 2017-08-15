@@ -14,7 +14,7 @@
 
 // COUNTER CODE
 
-var button = document.getElementById("count")
+var button = document.getElementById("counter")
 button.onclick=function (){
     
     //Make a request to counter endpoint
