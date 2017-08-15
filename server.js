@@ -89,7 +89,7 @@ app.get('/submit-name',function(req,res){//URL:/submit-name?name-xxxxx
     names.push(name);
     //JSON: Javascript Object Notation
      
-    res.send(JSAN.stringify(names)); 
+    res.send(JSON.stringify(names)); 
 });
 app.get('/:articleName', function (req, res) {
     //articleName --- article-one
