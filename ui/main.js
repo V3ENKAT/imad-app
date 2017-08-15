@@ -34,11 +34,16 @@ button.onclick=function (){
     
      }
      //Not done yet
-     }}   
+     }
+      request.open('GET', 'http://sanvenkat21072017.imad.hasura-app.io/counter')
+    request.send(null);
+     
+     
+     
+ }   
    
     //Make the request
-    request.open('GET', 'http://sanvenkat21072017.imad.hasura-app.io/counter')
-    request.send(null);
+   
 };
 
 
