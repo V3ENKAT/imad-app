@@ -82,7 +82,7 @@ var counter = 0;
 app.get('/counter', function (req,res){counter = counter + 1;
     res.send(counter.toString());
 });
-var names=();
+var names=[];
 app.get('/submit-name',function(req,res){//URL:/submit-name?name-xxxxx
     //Get the name from the request
     var name=req.query.name; //T000
