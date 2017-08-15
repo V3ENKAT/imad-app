@@ -88,7 +88,7 @@ app.get('/submit-name',function(req,res){//URL:/submit-name?name-xxxxx
     var name=req.query.name; //T000
     names.push(name);
     //JSON: Javascript Object Notation
- var names=[];    
+     
     res.send(JSON.stringify(names)); //T000
 });
 app.get('/:articleName', function (req, res) {
