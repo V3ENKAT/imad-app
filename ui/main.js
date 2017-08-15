@@ -16,7 +16,8 @@ element.innerHTML = '---';
 
 var button = document.getElementById("counter");
 
-
+request.open('GET', 'http://sanvenkat21072017.imad.hasura-app.io/counter',true);     
+    request.send(null);
 button.onclick=function (){
     
     //Create a request object
@@ -36,8 +37,7 @@ button.onclick=function (){
              }   
    
     //Make the request
-    request.open('GET', 'http://sanvenkat21072017.imad.hasura-app.io/counter',true);     
-    request.send(null);
+    
 };
 
 
