@@ -90,7 +90,7 @@ app.get('/submit-name',function(req,res){//URL:/submit-name?name-xxxxx
     //JSON: Javascript Object Notation
      
     res.send(JSON.stringify(names)); //T000
-
+})
 app.get('/:articleName', function (req, res) {
     //articleName --- article-one
     //artilces[articleName]--- {} content object for article one
@@ -110,7 +110,6 @@ app.get('/ui/madi.png', function (req, res) {
     
     
     
-})
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
