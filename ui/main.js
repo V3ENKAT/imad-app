@@ -14,7 +14,9 @@ element.innerHTML = '---';
 
 // COUNTER CODE
 
-var button = document.getElementById("counter")
+var button = document.getElementById("counter");
+var counter = counter+1;
+
 button.onclick=function (){
     
     //Make a request to counter endpoint
