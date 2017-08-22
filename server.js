@@ -4,7 +4,7 @@ var path = require('path');
 var Pool = require ('pg').Pool;
 
 
-var config = {
+var config = {}
     user: 'sanvenkat21072017'
     database: 'sanvenkat21072017'
     port: '5432'
