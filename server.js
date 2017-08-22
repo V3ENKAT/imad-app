@@ -10,7 +10,7 @@ var config = {}
     port: '5432';
     host: 'db.imad.hasura-app.io' 
     passowrd: process.env.DB_PASSWORD
-};
+}
 var app = express();
 app.use(morgan('combined'));
 var articles = {
