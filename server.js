@@ -9,7 +9,7 @@ var config = {
     database: 'sanvenkat21072017',
     port: '5432',
     host: 'db.imad.hasura-app.io',
-    passowrd: 'process.env.DB_Password',
+    passowrd: 'process.env.db_Password',
 };
 var app = express();
 app.use(morgan('combined'));
