@@ -132,7 +132,7 @@ res.status(404).send('Article not found');
             
         }}
         
-    })
+    });
  
 
 app.get('/ui/style.css', function (req, res) {
