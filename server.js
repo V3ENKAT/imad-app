@@ -92,7 +92,7 @@ app.get('/', function (req, res) {
       
       //make a select request
       //return a reponse with the results 
-        pool.query('select * from article',function (err,result) 
+        pool.query('select * from "Article Table"',function (err,result) 
         {
             if(err){
                 res.status(500).send(err.toString());
@@ -120,7 +120,7 @@ app.get('/articles/:articleName', function (req, res) {
   //  var articleName = req.params.articleName;
     // SELECT * FROM article WHERE title = 'article-one'
     
-    pool.query("SELECT * FROM article WHERE title = ' " + req.params.articleName + " '" , function(err, result){
+    pool.query('SELECT * FROM "article" WHERE title = '  + req.params.articleName +  '' , function(err, result){
         if (err){
                 res.status(500).send(err.toString());
         }else {
